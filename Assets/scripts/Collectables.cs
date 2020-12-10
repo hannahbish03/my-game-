@@ -8,11 +8,11 @@ public class Collectables : MonoBehaviour
     public Player thePlayer;
     Text scoreText;
     public GameObject player;
-    private int Win; 
+    private int Win;
 
-   // Use this for initialization
+    // Use this for initialization
     void Start()
-    {  
+    {
         scoreText = GameObject.Find("scoreText").GetComponent<Text>();
         thePlayer = GameObject.Find("Player").GetComponent<Player>();
     }
@@ -25,17 +25,23 @@ public class Collectables : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-
-        thePlayer.score += 1;
-        scoreText.text = "Score: " + thePlayer.score;
-        Destroy(gameObject);
-
-        if (thePlayer.score > 25)
+        if (other.gameObject.name == "Player")
         {
-           SceneManager.LoadScene(2);
-           // go to win scene 
+
+            thePlayer.score += 1;
+            scoreText.text = "Score: " + thePlayer.score;
+            Destroy(gameObject);
+
+            if (thePlayer.score > 25)
+            {
+                SceneManager.LoadScene(2);
+                // go to win scene 
+
+            }
+
 
         }
+
 
 
     }
