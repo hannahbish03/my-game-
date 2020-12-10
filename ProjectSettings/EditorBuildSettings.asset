@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Tilescreen.unity
+    path: Assets/scripts/Tilescreen.unity
     guid: dbd27ae18729c2d41bd0232770682a0a
   - enabled: 1
-    path: Assets/Scenes/my game scene.unity
+    path: Assets/scripts/my game scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Win.unity
+    path: Assets/scripts/Win.unity
     guid: f785551c5d2981a4aa500a7d545a14dc
   m_configObjects: {}
