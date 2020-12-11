@@ -32,7 +32,7 @@ public class Collectables : MonoBehaviour
             scoreText.text = "Score: " + thePlayer.score;
             Destroy(gameObject);
 
-            if (thePlayer.score > 25)
+            if (thePlayer.score > 32)
             {
                 SceneManager.LoadScene(2);
                 // go to win scene 

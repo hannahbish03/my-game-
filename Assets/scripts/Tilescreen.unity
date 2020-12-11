@@ -950,7 +950,7 @@ MonoBehaviour:
   m_Text: 'By Hannah
 
 
-    -Collect 26 collectables to win! '
+    -Collect 33 collectables to win! '
 --- !u!222 &1294352773
 CanvasRenderer:
   m_ObjectHideFlags: 0
